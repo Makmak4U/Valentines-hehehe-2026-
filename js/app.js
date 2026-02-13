@@ -1,17 +1,21 @@
 const yes = document.querySelector("#yes");
 const no = document.querySelector("#no");
 const gif = document.querySelector("#gif");
+const mp4 = document.querySelector("#mp4");
 const text = document.querySelector("#text");
 const vid = document.querySelector("video");
 let count = 2;
 
 const gifs = [
-  "../resources/cat-heart.mp4",
   "../resources/rusure.gif",
-  "../resources/3shocked-1.mp4",
   "../resources/4.crying.gif",
   "../resources/5.crying.gif",
   "../resources/idc.gif"
+];
+
+const mp4 = [
+  "../resources/cat-heart.mp4",
+  "../resources/3shocked-1.mp4"
 ];
 
 // to load the gifs faster
@@ -24,7 +28,7 @@ gifs.forEach(gifSrc => {
 no.addEventListener("click", () => {
   if (count == 2) {
     gif.src = "../resources/rusure.gif";// gif credit: https://knowyourmeme.com/photos/2738959-mr-fresh-side-eye-cat
-    text.innerHTML = "Nag kamali ka lang pindot diba? YES dapat yun diba?🤨";
+    text.innerHTML = "Nag kamali ka lang pindot diba? Oo dapat yun diba?🤨";
     yes.style.height = "65%";
     yes.style.width = "60%";
     no.style.width = "30%";
@@ -66,3 +70,4 @@ yes.addEventListener("click", () => {
     vid.style.display = "none";
   }, 9000);
 });
+
