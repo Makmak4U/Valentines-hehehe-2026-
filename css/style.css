@@ -74,6 +74,11 @@ body, html {
     width: 64%;
 }
 
+.mp4 {
+    height: 90%;
+    width: 64%;
+}
+
 .text-one {
     height: 20%;
     width: 100%;
@@ -142,3 +147,4 @@ a {
         width: 80%;
     }
 }
+
