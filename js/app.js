@@ -1,7 +1,6 @@
 const yes = document.querySelector("#yes");
 const no = document.querySelector("#no");
 const gif = document.querySelector("#gif");
-const mp4 = document.querySelector("#mp4");
 const text = document.querySelector("#text");
 const vid = document.querySelector("video");
 let count = 2;
@@ -10,10 +9,7 @@ const gifs = [
   "../resources/rusure.gif",
   "../resources/4.crying.gif",
   "../resources/5.crying.gif",
-  "../resources/idc.gif"
-];
-
-const mp4 = [
+  "../resources/idc.gif",
   "../resources/cat-heart.mp4",
   "../resources/3shocked-1.mp4"
 ];
@@ -70,4 +66,5 @@ yes.addEventListener("click", () => {
     vid.style.display = "none";
   }, 9000);
 });
+
 
